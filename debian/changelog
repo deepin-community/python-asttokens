@@ -1,5 +1,118 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-asttokens (3.0.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version 3.0.0
+  * Remove patch applied upstream
+  * Trim Python2 vs 3 crumb from debian/changelog
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Alexandre Detiste <tchet@debian.org>  Sat, 30 Nov 2024 08:33:06 +0100
+
+python-asttokens (2.4.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Use v4 for d/watch
+  * Patch-out usage of python3-six
+  * Set Rules-Requires-Root: no
+
+ -- Alexandre Detiste <tchet@debian.org>  Sun, 29 Sep 2024 22:35:56 +0200
+
+python-asttokens (2.4.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/control: Migrate to pybuild-plugin-pyproject build-dep.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 28 Nov 2023 05:31:49 -0500
+
+python-asttokens (2.2.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 03 Jan 2023 11:05:10 -0500
+
+python-asttokens (2.2.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    + Fix compatibility with python3.10. (Closes: #1022445)
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 29 Nov 2022 12:50:52 -0500
+
+python-asttokens (2.0.5-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Boyuan Yang ]
+  * debian/rules: Re-enable tests since the library is now compatible
+    with python3.10. (Closes: #976119)
+  * debian/control: Use actual project homepage.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 12 Apr 2022 14:36:47 -0400
+
+python-asttokens (2.0.5-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump Standards-Version to 4.6.0 (no changes needed).
+  * debian/patches: Drop patches, no longer needed.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 28 Aug 2021 17:32:44 -0400
+
+python-asttokens (2.0.4-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Boyuan Yang ]
+  * New upstream release.
+    + Compatible with python 3.9. (Closes: #972723, #975731)
+  * Bump Standards-Version to 4.5.1.
+  * Bump debhelper compat to v13.
+  * Replace python3-all build-dependency with python3:any to drop
+    python3.8 support.
+  * Add some missing build-dependencies.
+  * debian/rules: Temporarily allow 6 failed tests due to known bug
+    in python3.9. See upstream issue #59 for details.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 29 Nov 2020 18:55:05 -0500
+
+python-asttokens (2.0.3-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field.
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+  * d/watch: Use https protocol.
+  * Bump Standards-Version to 4.4.1.
+
+  [ Diego M. Rodriguez ]
+  * New upstream version 2.0.3. (Closes: #950072)
+  * Bump debhelper-compat to 12.
+  * Bump Standards-Version to 4.5.0.
+  * Replace nose with pytest in build-depends.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 07 Feb 2020 12:04:55 -0500
+
+python-asttokens (1.1.13-2) unstable; urgency=low
+
+  * Fix copyright holder in d/copyright.
+
+ -- Dominik George <natureshadow@debian.org>  Tue, 12 Feb 2019 12:51:27 +0100
+
+python-asttokens (1.1.13-1) unstable; urgency=low
+
+  * Initial release. (Closes: #920896)
+
+ -- Dominik George <natureshadow@debian.org>  Wed, 30 Jan 2019 12:32:50 +0100
